@@ -6,16 +6,22 @@
 //
 
 import SwiftUI
+import UniformTypeIdentifiers
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        Text("Hello").onTapGesture{
+            print(Date())
+            print(NSPasteboard.general.string(forType: NSPasteboard.PasteboardType.string) ?? "not found")
         }
-        .padding()
+        Text("Madarchod")
+            .onTapGesture{
+                let lamo: String = "LAMO"
+                NSPasteboard.general.clearContents()
+                NSPasteboard.general.setString(lamo, forType:.string)
+            }
+        
+            .padding()
     }
 }
 

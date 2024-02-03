@@ -9,9 +9,26 @@ import SwiftUI
 
 @main
 struct CHistoryApp: App {
+    @State var currentNumber: String = "1"
     var body: some Scene {
-        WindowGroup {
+        
+        MenuBarExtra(currentNumber, systemImage: "\(currentNumber).square.fill") {
+            Button("One") {
+                currentNumber = "1"
+            }
+            .keyboardShortcut("1")
+            Divider()
+            Button("Two") {
+                currentNumber = "2"
+            }
+            Button("Three") {
+                currentNumber = "3"
+            }
+            MenuBarView()
             ContentView()
+            
         }
+        
+
     }
 }
