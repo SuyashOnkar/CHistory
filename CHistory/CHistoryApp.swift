@@ -9,26 +9,36 @@ import SwiftUI
 
 @main
 struct CHistoryApp: App {
-    @State var currentNumber: String = "1"
+    @StateObject private var timerManager = ClipboardTimerManager()
+    @State private var selectedClipboardItem: String?
+    
     var body: some Scene {
-        
-        MenuBarExtra(currentNumber, systemImage: "\(currentNumber).square.fill") {
-            Button("One") {
-                currentNumber = "1"
+        MenuBarExtra("clipboard", systemImage: "list.clipboard") {
+            VStack {
+                Button(action: {
+                    if timerManager.isTimerRunning {
+                        timerManager.stopTimer()
+                    } else {
+                        timerManager.startTimer()
+                    }
+                }) {
+                    Text(timerManager.isTimerRunning ? "Stop Timer" : "Start Timer")
+                }
+                
+                Divider()
+                
+                ClipboardHistoryView(clipboardHistory: timerManager.clipboardHistory)
+                
+                
+                
             }
-            .keyboardShortcut("1")
-            Divider()
-            Button("Two") {
-                currentNumber = "2"
-            }
-            Button("Three") {
-                currentNumber = "3"
-            }
-            MenuBarView()
-            ContentView()
-            
         }
-        
-
+        .environmentObject(timerManager)
     }
 }
+
+
+
+
+
+

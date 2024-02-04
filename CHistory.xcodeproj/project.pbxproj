@@ -14,6 +14,8 @@
 		7A962DC42B6CF7AF0046EDCD /* CHistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A962DC32B6CF7AF0046EDCD /* CHistoryTests.swift */; };
 		7A962DCE2B6CF7AF0046EDCD /* CHistoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A962DCD2B6CF7AF0046EDCD /* CHistoryUITests.swift */; };
 		7A962DD02B6CF7AF0046EDCD /* CHistoryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A962DCF2B6CF7AF0046EDCD /* CHistoryUITestsLaunchTests.swift */; };
+		7A962DE32B6F906F0046EDCD /* ClipboardTimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A962DE22B6F906F0046EDCD /* ClipboardTimerManager.swift */; };
+		7A962DE52B6F924C0046EDCD /* ClipboardHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A962DE42B6F924C0046EDCD /* ClipboardHistoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		7A962DC92B6CF7AF0046EDCD /* CHistoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CHistoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A962DCD2B6CF7AF0046EDCD /* CHistoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHistoryUITests.swift; sourceTree = "<group>"; };
 		7A962DCF2B6CF7AF0046EDCD /* CHistoryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHistoryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7A962DE22B6F906F0046EDCD /* ClipboardTimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardTimerManager.swift; sourceTree = "<group>"; };
+		7A962DE42B6F924C0046EDCD /* ClipboardHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardHistoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				7A962DB52B6CF7AF0046EDCD /* Assets.xcassets */,
 				7A962DB72B6CF7AF0046EDCD /* CHistory.entitlements */,
 				7A962DB82B6CF7AF0046EDCD /* Preview Content */,
+				7A962DE22B6F906F0046EDCD /* ClipboardTimerManager.swift */,
+				7A962DE42B6F924C0046EDCD /* ClipboardHistoryView.swift */,
 			);
 			path = CHistory;
 			sourceTree = "<group>";
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A962DE32B6F906F0046EDCD /* ClipboardTimerManager.swift in Sources */,
 				7A962DB42B6CF7AC0046EDCD /* ContentView.swift in Sources */,
+				7A962DE52B6F924C0046EDCD /* ClipboardHistoryView.swift in Sources */,
 				7A962DB22B6CF7AC0046EDCD /* CHistoryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
