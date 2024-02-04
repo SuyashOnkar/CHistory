@@ -13,7 +13,7 @@ struct CHistoryApp: App {
     @State private var selectedClipboardItem: String?
     
     var body: some Scene {
-        MenuBarExtra("clipboard", systemImage: "list.clipboard") {
+        MenuBarExtra("clipboard", systemImage: "scroll.fill") {
             VStack {
                 Button(action: {
                     if timerManager.isTimerRunning {
@@ -22,7 +22,13 @@ struct CHistoryApp: App {
                         timerManager.startTimer()
                     }
                 }) {
-                    Text(timerManager.isTimerRunning ? "Stop Timer" : "Start Timer")
+                    HStack {
+                        Image(systemName: timerManager.isTimerRunning ? "stop.circle.fill" : "play.circle.fill")
+                            .imageScale(.small)
+                        
+                        Text(timerManager.isTimerRunning ? "Stop Capturing" : "Start Capturing")
+                    }
+
                 }
                 
                 Divider()
@@ -37,6 +43,9 @@ struct CHistoryApp: App {
     }
 }
 
+#Preview {
+    ClipboardHistoryView(clipboardHistory: [])
+}
 
 
 

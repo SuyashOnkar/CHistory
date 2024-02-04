@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7A962DB22B6CF7AC0046EDCD /* CHistoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A962DB12B6CF7AC0046EDCD /* CHistoryApp.swift */; };
-		7A962DB42B6CF7AC0046EDCD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A962DB32B6CF7AC0046EDCD /* ContentView.swift */; };
 		7A962DB62B6CF7AF0046EDCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A962DB52B6CF7AF0046EDCD /* Assets.xcassets */; };
 		7A962DBA2B6CF7AF0046EDCD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A962DB92B6CF7AF0046EDCD /* Preview Assets.xcassets */; };
 		7A962DC42B6CF7AF0046EDCD /* CHistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A962DC32B6CF7AF0046EDCD /* CHistoryTests.swift */; };
@@ -38,7 +37,6 @@
 /* Begin PBXFileReference section */
 		7A962DAE2B6CF7AC0046EDCD /* CHistory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CHistory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A962DB12B6CF7AC0046EDCD /* CHistoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHistoryApp.swift; sourceTree = "<group>"; };
-		7A962DB32B6CF7AC0046EDCD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7A962DB52B6CF7AF0046EDCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A962DB72B6CF7AF0046EDCD /* CHistory.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CHistory.entitlements; sourceTree = "<group>"; };
 		7A962DB92B6CF7AF0046EDCD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				7A962DB12B6CF7AC0046EDCD /* CHistoryApp.swift */,
-				7A962DB32B6CF7AC0046EDCD /* ContentView.swift */,
 				7A962DB52B6CF7AF0046EDCD /* Assets.xcassets */,
 				7A962DB72B6CF7AF0046EDCD /* CHistory.entitlements */,
 				7A962DB82B6CF7AF0046EDCD /* Preview Content */,
@@ -266,7 +263,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A962DE32B6F906F0046EDCD /* ClipboardTimerManager.swift in Sources */,
-				7A962DB42B6CF7AC0046EDCD /* ContentView.swift in Sources */,
 				7A962DE52B6F924C0046EDCD /* ClipboardHistoryView.swift in Sources */,
 				7A962DB22B6CF7AC0046EDCD /* CHistoryApp.swift in Sources */,
 			);
