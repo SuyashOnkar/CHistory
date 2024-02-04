@@ -43,10 +43,6 @@ struct CHistoryApp: App {
     }
 }
 
-#Preview {
-    ClipboardHistoryView(clipboardHistory: [])
-}
-
 
 
 
