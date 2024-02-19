@@ -1,1 +1,1 @@
-CHistory: Native SwiftUI app to store user's clipboard history.
+CHistory: Menubar macos app to enhance clipboard functionality.
